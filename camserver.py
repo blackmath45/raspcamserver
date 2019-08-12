@@ -20,6 +20,8 @@ while True :
 		with picamera.PiCamera() as camera:
 			camera.resolution = (1920, 1080)
 			camera.framerate = 30
+			camera.rotation = 180		
+			#camera.exposure_mode = 'night'			
 			# Start a preview and let the camera warm up for 2 seconds
 			camera.start_preview()
 			time.sleep(2)

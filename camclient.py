@@ -36,7 +36,7 @@ try:
         # "Decode" the image from the array, preserving colour
         image = cv2.imdecode(data, 1)
 
-        image = cv2.flip(image, 0)		
+        #image = cv2.flip(image, 0)		
         
         cv2.imshow("test", image)
         c = cv2.waitKey(7) % 0x100
